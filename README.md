@@ -204,7 +204,7 @@
 
 
 ## Configure TF script to automate deploying Docker container to EC2 instance
-Configured ssh key pair in Terraform config file
+* Configure ssh key pair in Terraform config file
 
 ```
    # aws_key_pair.ssh-key will be created
@@ -223,7 +223,7 @@ Configured ssh key pair in Terraform config file
 ![Route tables _ VPC Management Console - Google Chrome 13-06-2023 18_46_10](https://github.com/Rajib-Mardi/terrraform/assets/96679708/d0e0bdad-9df4-4534-8d15-22471dd87a4b)
 
 
-creeate local file to store the ssh private key locally
+* Create local file to store the ssh private key locally
 
 ```
 # local_file.TF-key will be created
