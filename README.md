@@ -1,6 +1,7 @@
 ## Demo Project: 
 * Automate AWS Infrastructure 
-##Technologiesused: Terraform, AWS, Docker, Linux, Git
+## Technologiesused: 
+* Terraform, AWS, Docker, Linux, Git
 
 ## Project Description:
 
@@ -72,7 +73,7 @@
   ![AWS Management Console - Google Chrome 10-06-2023 10_51_02](https://github.com/Rajib-Mardi/terrraform/assets/96679708/65d93871-a556-463a-ab87-6a756ef4887f)
 
   
-*  Configured Default/Main Route Table
+*  Configure Default/Main Route Table
   ```
   # aws_default_route_table.main-rtb will be created
   + resource "aws_default_route_table" "main-rtb" {
@@ -107,6 +108,7 @@
    }
 
 ```
+* Configure the internet gateway to allow the vpc to connect to the internet.
 
 ```
  # aws_internet_gateway.my-app-igw will be created
@@ -243,10 +245,8 @@ creeate local file to store the ssh private key locally
 
 
 ```
-❏ Created EC2 Instance
-- Fetch AMI
-
-- restrict permission
+* reate EC2 Instance
+ * Fetch AMI
 
 ```
 
