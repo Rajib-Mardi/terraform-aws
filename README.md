@@ -68,9 +68,11 @@
      
      ```
      
-  ![AWS Management Console - Google Chrome 10-06-2023 10_50_48](https://github.com/Rajib-Mardi/terrraform/assets/96679708/207a2580-799f-4c11-8a87-81ecdbe81c6d)
+     ![VPC Management Console - Google Chrome 13-06-2023 18_54_19](https://github.com/Rajib-Mardi/terrraform/assets/96679708/babb7b5e-39b8-40c9-b174-77aeca620d7c)
 
-  ![AWS Management Console - Google Chrome 10-06-2023 10_51_02](https://github.com/Rajib-Mardi/terrraform/assets/96679708/65d93871-a556-463a-ab87-6a756ef4887f)
+
+
+   ![VPC Management Console - Google Chrome 13-06-2023 18_54_29](https://github.com/Rajib-Mardi/terrraform/assets/96679708/7a99bc23-1fc3-4353-ae64-1b35d6d09027)
 
   
 *  Configure Default/Main Route Table
@@ -106,8 +108,12 @@
       + vpc_id                 = (known after apply)
    
    }
-
+   
 ```
+
+
+![Route tables _ VPC Management Console - Google Chrome 13-06-2023 18_44_35](https://github.com/Rajib-Mardi/terrraform/assets/96679708/370d73b7-5a64-4525-80ea-8662a8980b27)
+
 * Configure the internet gateway to allow the vpc to connect to the internet.
 
 ```
@@ -125,6 +131,9 @@
       + vpc_id   = (known after apply)
     }
 ```
+![Route tables _ VPC Management Console - Google Chrome 13-06-2023 18_45_00](https://github.com/Rajib-Mardi/terrraform/assets/96679708/36dc4f71-4600-43fd-824d-580c30f73db3)
+
+
 *  Configured Default Security Group
 
 ```
@@ -191,6 +200,9 @@
 
 ```
 
+![Route tables _ VPC Management Console - Google Chrome 13-06-2023 18_45_29](https://github.com/Rajib-Mardi/terrraform/assets/96679708/a23a649e-4218-45ef-adb5-730d547dc196)
+
+
 ## Configure TF script to automate deploying Docker container to EC2 instance
 Configured ssh key pair in Terraform config file
 
@@ -208,6 +220,7 @@ Configured ssh key pair in Terraform config file
       + tags_all        = (known after apply)
     }
 ```
+![Route tables _ VPC Management Console - Google Chrome 13-06-2023 18_46_10](https://github.com/Rajib-Mardi/terrraform/assets/96679708/d0e0bdad-9df4-4534-8d15-22471dd87a4b)
 
 
 creeate local file to store the ssh private key locally
@@ -299,6 +312,8 @@ creeate local file to store the ssh private key locally
       + vpc_security_group_ids               = (known after apply)
     }
 ```
+![Instances _ EC2 Management Console - Google Chrome 13-06-2023 18_50_09](https://github.com/Rajib-Mardi/terrraform/assets/96679708/d51db805-96d4-4d42-a673-8f2c805d03bd)
+
 
 
 * SSH into EC2 instance
