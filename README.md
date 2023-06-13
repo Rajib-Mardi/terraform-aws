@@ -245,7 +245,7 @@ creeate local file to store the ssh private key locally
 
 
 ```
-* reate EC2 Instance
+* Create EC2 Instance
  * Fetch AMI
 
 ```
