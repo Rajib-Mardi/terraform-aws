@@ -21,8 +21,8 @@
 
 ### Create TF project to automate provisioning AWS Infrastructure and its components, such as: VPC, Subnet, Route Table, Internet Gateway, EC2, Security Group
 
-* Created a custom VPC  : VPC with a CIDR block from var.vpc_cidr_block and a dynamic name based on var.env_prefix.
-* Created a custom subnet : Subnet within the VPC, with a CIDR block from var.subnet_cidr_block, in a specified availability zone (var.avail_zone), and a dynamic name.
+* Terraform config Created a custom VPC  : VPC with a CIDR block from var.vpc_cidr_block and a dynamic name based on var.env_prefix.
+* Terraform config Created a custom subnet : Subnet within the VPC, with a CIDR block from var.subnet_cidr_block, in a specified availability zone (var.avail_zone), and a dynamic name.
 
      
      
@@ -130,7 +130,8 @@
 
 ![Route tables _ VPC Management Console - Google Chrome 13-06-2023 18_44_35](https://github.com/Rajib-Mardi/terrraform/assets/96679708/370d73b7-5a64-4525-80ea-8662a8980b27)
 
-* Configure the internet gateway to allow the vpc to connect to the internet.
+* Configure the internet gateway to allow the vpc to connect to the internet : Terraform configuration creates an Internet Gateway and attaches it to the VPC. It is tagged with a name based on ```var.env_prefix``` (```e.g., dev-igw```).
+  .
 
 ```
  # aws_internet_gateway.my-app-igw will be created
