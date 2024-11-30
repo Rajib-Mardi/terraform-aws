@@ -21,7 +21,9 @@
 
 ### Create TF project to automate provisioning AWS Infrastructure and its components, such as: VPC, Subnet, Route Table, Internet Gateway, EC2, Security Group
 
-* Create VPC & Subnet
+* Created a custom VPC  : VPC with a CIDR block from var.vpc_cidr_block and a dynamic name based on var.env_prefix.
+* Created a custom subnet : Subnet within the VPC, with a CIDR block from var.subnet_cidr_block, in a specified availability zone (var.avail_zone), and a dynamic name.
+
      
      
      ```
@@ -89,7 +91,7 @@
    ![VPC Management Console - Google Chrome 13-06-2023 18_54_29](https://github.com/Rajib-Mardi/terrraform/assets/96679708/7a99bc23-1fc3-4353-ae64-1b35d6d09027)
 
   
-*  Configure Default/Main Route Table
+*  Configure Default/Main Route Table 
   ```
   # aws_default_route_table.main-rtb will be created
   + resource "aws_default_route_table" "main-rtb" {
