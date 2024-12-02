@@ -91,7 +91,8 @@
    ![VPC Management Console - Google Chrome 13-06-2023 18_54_29](https://github.com/Rajib-Mardi/terrraform/assets/96679708/7a99bc23-1fc3-4353-ae64-1b35d6d09027)
 
   
-*  Configure Default/Main Route Table 
+*  Configure Default/Main Route Table : Terraform code configures the default route table for a VPC to route all traffic (0.0.0.0/0) to an Internet Gateway, and adds a name tag using a variable prefix.
+
   ```
   # aws_default_route_table.main-rtb will be created
   + resource "aws_default_route_table" "main-rtb" {
@@ -151,8 +152,7 @@
 ![Route tables _ VPC Management Console - Google Chrome 13-06-2023 18_45_00](https://github.com/Rajib-Mardi/terrraform/assets/96679708/36dc4f71-4600-43fd-824d-580c30f73db3)
 
 
-*  Configured Default Security Group
-
+*  Configured Default Security Group :  
 ```
  # aws_default_security_group.default-sg will be created
   + resource "aws_default_security_group" "default-sg" {
