@@ -152,7 +152,7 @@
 ![Route tables _ VPC Management Console - Google Chrome 13-06-2023 18_45_00](https://github.com/Rajib-Mardi/terrraform/assets/96679708/36dc4f71-4600-43fd-824d-580c30f73db3)
 
 
-*  Configured Default Security Group :  
+*  Configured Default Security Group :   Terraform configuration creates a security group allowing SSH from a specific IP, HTTP from anywhere, and all outbound traffic, with a name tag based on a variable prefix
 ```
  # aws_default_security_group.default-sg will be created
   + resource "aws_default_security_group" "default-sg" {
