@@ -13,7 +13,7 @@
 
 
 ## Demo Project: 
-* Automate AWS Infrastructure 
+* Automate AWS Infrastructure  and run Nginx container 
 ## Technologiesused: 
 * Terraform, AWS, Docker, Linux, Git
 
