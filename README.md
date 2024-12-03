@@ -1,19 +1,15 @@
-### Automate Provisioning EC2 with Terraform
-
-
-
 
 ### Project: 
-* Automate AWS Infrastructure  and run Nginx container 
-# ## Technologiesused: 
+* Automate AWS Infrastructure with Terraform  and run Nginx container 
+### Technologiesused: 
 * Terraform, AWS, Docker, Linux, Git
 
 ### Project Description:
 
 #### Create TF project to automate provisioning AWS Infrastructure and its components, such as: VPC, Subnet, Route Table, Internet Gateway, EC2, Security Group
 
-* Terraform config  created a custom VPC  : VPC with a CIDR block from var.vpc_cidr_block and a dynamic name based on var.env_prefix.
-* Terraform config created a custom subnet : Subnet within the VPC, with a CIDR block from var.subnet_cidr_block, in a specified availability zone (var.avail_zone), and a dynamic name.
+* Terraform config  created a custom VPC  : VPC with a CIDR block from var.vpc_cidr_block and a dynamic name based on ```var.env_prefix```.
+* Terraform config created a custom subnet : Subnet within the VPC, with a CIDR block from ```var.subnet_cidr_block```, in a specified availability zone (```var.avail_zone```), and a dynamic name.
 
      
      
