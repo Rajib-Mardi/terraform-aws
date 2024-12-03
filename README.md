@@ -275,8 +275,19 @@
 
 
 ```
-* Create EC2 Instance
- * Fetch AMI
+
+ * Fetch AMI : This Terraform configuration fetches the latest Amazon Linux 2 AMI (matching the name ```amzn2-ami-kernel-5.10-hvm-*```) and outputs its ID.
+
+* Create EC2 Instance : Terraform config launches an EC2 instance with:
+
+AMI: Latest Amazon Linux 2.
+Instance type: ```var.instance_type```.
+Subnet: ```myapp-subnet-1```.
+Security group: Default.
+Public IP: Yes.
+SSH key: ```ssh-key```.
+User data: ```entry-script.sh```.
+Tag: ```Name = var.env_prefix-server```.
 
 ```
 
@@ -338,7 +349,6 @@
 
 
 * Configured Terraform to install Docker and run nginx image
-   *  Extract shell commands to own shell script
    *  create an "script.sh" file in terraform folder and write the linux commands to execute the shell script
    *  Accessed nginx through Browser
  
