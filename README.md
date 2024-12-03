@@ -68,14 +68,14 @@
 
 * Create EC2 Instance : Terraform config launches an EC2 instance with:
 
-AMI: Latest Amazon Linux 2.
-Instance type: ```var.instance_type```.
-Subnet: ```myapp-subnet-1```.
-Security group: Default.
-Public IP: Yes.
-SSH key: ```ssh-key```.
-User data: ```entry-script.sh```.
-Tag: ```Name = var.env_prefix-server```.
+AMI: Latest Amazon Linux 2 ,
+Instance type: ```var.instance_type```,
+Subnet: ```myapp-subnet-1```, 
+Security group: Default, 
+Public IP: Yes., 
+SSH key: ```ssh-key```, 
+User data: ```entry-script.sh```, 
+Tag: ```Name = var.env_prefix-server```. 
 
 
 ![Instances _ EC2 Management Console - Google Chrome 13-06-2023 18_50_09](https://github.com/Rajib-Mardi/terrraform/assets/96679708/d51db805-96d4-4d42-a673-8f2c805d03bd)
