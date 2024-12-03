@@ -14,8 +14,8 @@
 <img src="https://github.com/user-attachments/assets/138aa862-92f5-4357-b3b7-999d9fe7232b" width="700">
 
 
-* Terraform config  created a custom VPC  : VPC with a CIDR block from var.vpc_cidr_block and a dynamic name based on ```var.env_prefix```.
-* Terraform config created a custom subnet : Subnet within the VPC, with a CIDR block from ```var.subnet_cidr_block```, in a specified availability zone (```var.avail_zone```), and a dynamic name.
+* Terraform config  created a custom ```VPC```  : VPC with a CIDR block from var.vpc_cidr_block and a dynamic name based on ```var.env_prefix```.
+* Terraform config created a custom ```subnet``` : Subnet within the VPC, with a CIDR block from ```var.subnet_cidr_block```, in a specified availability zone (```var.avail_zone```), and a dynamic name.
 
      
      
@@ -27,14 +27,14 @@
 <img src="https://github.com/Rajib-Mardi/terrraform/assets/96679708/7a99bc23-1fc3-4353-ae64-1b35d6d09027" width="700">
 
   
-*  Configure Default/Main Route Table : Terraform config   the default route table for a VPC to route all traffic (0.0.0.0/0) to an Internet Gateway, and adds a name tag using a variable prefix.
+*  Configure ```Default/Main Route Table``` : Terraform config   the default route table for a VPC to route all traffic (0.0.0.0/0) to an Internet Gateway, and adds a name tag using a variable prefix.
 
 
 
 <img src="https://github.com/Rajib-Mardi/terrraform/assets/96679708/370d73b7-5a64-4525-80ea-8662a8980b27" width="700">
 
 
-* Configure the internet gateway to allow the vpc to connect to the internet : Terraform configuration creates an Internet Gateway and attaches it to the VPC. It is tagged with a name based on ```var.env_prefix``` (```e.g., dev-igw```).
+* Configure the ```internet gateway``` to allow the vpc to connect to the internet : Terraform configuration creates an Internet Gateway and attaches it to the VPC. It is tagged with a name based on ```var.env_prefix``` (```e.g., dev-igw```).
 
 
 
@@ -42,7 +42,7 @@
 <img src="https://github.com/Rajib-Mardi/terrraform/assets/96679708/36dc4f71-4600-43fd-824d-580c30f73db3" width="700">
 
 
-*  Configured Default Security Group :   Terraform configuration creates a security group allowing SSH from a specific IP, HTTP from anywhere, and all outbound traffic, with a name tag based on a variable prefix
+*  Configured ```Default Security Group``` :   Terraform configuration creates a security group allowing SSH from a specific IP, HTTP from anywhere, and all outbound traffic, with a name tag based on a variable prefix
 
 
 
@@ -50,12 +50,12 @@
 <img src="https://github.com/Rajib-Mardi/terrraform/assets/96679708/a23a649e-4218-45ef-adb5-730d547dc196" width="700">
 
 
-* Configure ssh key pair in Terraform config file : This Terraform configuration creates an AWS EC2 key pair named ```tfkey``` using a public key from a local file specified by ```var.ssh_key```.
+* Configure ```ssh key pair``` in Terraform config file : This Terraform configuration creates an AWS EC2 key pair named ```tfkey``` using a public key from a local file specified by ```var.ssh_key```.
 
 
- * Fetch AMI :  Terraform configuration fetches the latest Amazon Linux 2 AMI (matching the name ```amzn2-ami-kernel-5.10-hvm-*```) and outputs its ID.
+ * ```Fetch AMI``` :  Terraform configuration fetches the latest Amazon Linux 2 AMI (matching the name ```amzn2-ami-kernel-5.10-hvm-*```) and outputs its ID.
 
-* Create EC2 Instance : Terraform config launches an EC2 instance with: AMI: Latest Amazon Linux 2 , Instance type: ```var.instance_type```,  Subnet: ```myapp-subnet-1```, Security group: Default,  Public IP: Yes., SSH key: ```ssh-key```, User data: ```entry-script.sh```, Tag: ```Name = var.env_prefix-server```. 
+* Create ```EC2 Instance``` : Terraform config launches an EC2 instance with: AMI: Latest Amazon Linux 2 , Instance type: ```var.instance_type```,  Subnet: ```myapp-subnet-1```, Security group: Default,  Public IP: Yes., SSH key: ```ssh-key```, User data: ```entry-script.sh```, Tag: ```Name = var.env_prefix-server```. 
 
 
 
@@ -78,11 +78,11 @@ terraform apply --auto-approve
 
 #### Configured  Terraform  script to automate deploying Docker container to EC2 instance
    * Configured Terraform to install Docker and run nginx image
-   *  create an "script.sh" file in terraform folder and write the linux commands to execute the shell script
+   *  create an ```"script.sh"``` file in terraform folder and write the linux commands to execute the shell script
       *  script: Updates the system and installs Docker.
-      *  Starts the Docker service.
-      *  Adds the ec2-user to the Docker group.
-      *  Runs an Nginx container, mapping port 8080 to 80.
+         *  Starts the Docker service.
+         *  Adds the ec2-user to the Docker group.
+         *  Runs an Nginx container, mapping port 8080 to 80.
 
    *  Accessed nginx through Browser
  
