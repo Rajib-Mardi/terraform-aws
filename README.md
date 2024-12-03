@@ -1,28 +1,19 @@
-# Automate Provisioning EC2 with Terraform
-
- <p float="left">
-<img src="https://github.com/appwebtech/EKS-Cluster-With-Terraform/blob/main/images/tf-logo.png" width="100">
-
-<img src="https://github.com/appwebtech/Ansible-Integration-Jenkins/blob/main/images/aws-logo.png" width="120">
+### Automate Provisioning EC2 with Terraform
 
 
-<img src="https://github.com/appwebtech/Deploy-Docker-With-Terraform/blob/main/images/docker.png" width="100">
-</p> ```
-
-----
 
 
-## Demo Project: 
+### Project: 
 * Automate AWS Infrastructure  and run Nginx container 
-## Technologiesused: 
+# ## Technologiesused: 
 * Terraform, AWS, Docker, Linux, Git
 
-## Project Description:
+### Project Description:
 
-### Create TF project to automate provisioning AWS Infrastructure and its components, such as: VPC, Subnet, Route Table, Internet Gateway, EC2, Security Group
+#### Create TF project to automate provisioning AWS Infrastructure and its components, such as: VPC, Subnet, Route Table, Internet Gateway, EC2, Security Group
 
-* Terraform config  Created a custom VPC  : VPC with a CIDR block from var.vpc_cidr_block and a dynamic name based on var.env_prefix.
-* Terraform config Created a custom subnet : Subnet within the VPC, with a CIDR block from var.subnet_cidr_block, in a specified availability zone (var.avail_zone), and a dynamic name.
+* Terraform config  created a custom VPC  : VPC with a CIDR block from var.vpc_cidr_block and a dynamic name based on var.env_prefix.
+* Terraform config created a custom subnet : Subnet within the VPC, with a CIDR block from var.subnet_cidr_block, in a specified availability zone (var.avail_zone), and a dynamic name.
 
      
      
