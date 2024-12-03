@@ -8,6 +8,9 @@
 
 #### Create TF project to automate provisioning AWS Infrastructure and its components, such as: VPC, Subnet, Route Table, Internet Gateway, EC2, Security Group
 
+
+![Screenshot 2024-11-30 003029](https://github.com/user-attachments/assets/138aa862-92f5-4357-b3b7-999d9fe7232b)
+
 * Terraform config  created a custom VPC  : VPC with a CIDR block from var.vpc_cidr_block and a dynamic name based on ```var.env_prefix```.
 * Terraform config created a custom subnet : Subnet within the VPC, with a CIDR block from ```var.subnet_cidr_block```, in a specified availability zone (```var.avail_zone```), and a dynamic name.
 
