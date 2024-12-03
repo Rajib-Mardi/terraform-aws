@@ -47,12 +47,6 @@
 * Configure ssh key pair in Terraform config file : This Terraform configuration creates an AWS EC2 key pair named ```tfkey``` using a public key from a local file specified by ```var.ssh_key```.
 
 
-
-![Route tables _ VPC Management Console - Google Chrome 13-06-2023 18_46_10](https://github.com/Rajib-Mardi/terrraform/assets/96679708/d0e0bdad-9df4-4534-8d15-22471dd87a4b)
-
-
-
-
  * Fetch AMI :  Terraform configuration fetches the latest Amazon Linux 2 AMI (matching the name ```amzn2-ami-kernel-5.10-hvm-*```) and outputs its ID.
 
 * Create EC2 Instance : Terraform config launches an EC2 instance with: AMI: Latest Amazon Linux 2 , Instance type: ```var.instance_type```,  Subnet: ```myapp-subnet-1```, Security group: Default,  Public IP: Yes., SSH key: ```ssh-key```, User data: ```entry-script.sh```, Tag: ```Name = var.env_prefix-server```. 
