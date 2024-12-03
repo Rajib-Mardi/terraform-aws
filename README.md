@@ -44,7 +44,6 @@
 ![Route tables _ VPC Management Console - Google Chrome 13-06-2023 18_45_29](https://github.com/Rajib-Mardi/terrraform/assets/96679708/a23a649e-4218-45ef-adb5-730d547dc196)
 
 
-## Configure TF script to automate deploying Docker container to EC2 instance
 * Configure ssh key pair in Terraform config file : This Terraform configuration creates an AWS EC2 key pair named ```tfkey``` using a public key from a local file specified by ```var.ssh_key```.
 
 
